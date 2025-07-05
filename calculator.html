@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pickleball Revenue Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Pickleball Biz Revenue Calculator</h1>
+      <p>Calculate your pickleball business profitability and ROI</p>
+    </div>
+
+    <div class="content">
+      <div class="grid">
+        <div class="section">
+          <h2>Core Parameters</h2>
+          <div class="input-group">
+            <label>Number of Courts</label>
+            <div class="input-wrapper">
+              <input type="number" id="courts" value="2">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Max Slots Per Person/Week</label>
+            <div class="input-wrapper">
+              <input type="number" id="maxSlots" value="2">
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Revenue Inputs</h2>
+          <div class="input-group">
+            <label>Monthly Membership Price</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="pricePerMember" value="99">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Equipment Rentals / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="equipment" value="500">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Vending Sales / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="vending" value="2700">
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Monthly Cost Inputs</h2>
+          <div class="input-group">
+            <label>Lease Rate / Sq Ft / Year</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="leasePerSqFt" value="40">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Square Feet Per Court</label>
+            <div class="input-wrapper">
+              <input type="number" id="sqFtPerCourt" value="2500">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Utilities / Court / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="utilities" value="500">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Tech & Maintenance / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="tech" value="1000">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Vending Inventory / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="vendingInv" value="1000">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Misc Maintenance / Month</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="misc" value="2000">
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Initial Investment</h2>
+          <div class="input-group">
+            <label>Construction Costs / Court</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="constructionCosts" value="20000">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Equipment and Tech</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="equipmentTech" value="3000">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Vending Machine (2 machines)</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="vendingMachine" value="6000">
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Marketing Ads</label>
+            <div class="input-wrapper currency">
+              <input type="number" id="marketingAds" value="500">
+            </div>
+          </div>
+          <div class="total-row">
+            <div class="input-group">
+              <label>Total Initial Investment</label>
+              <div class="input-wrapper currency">
+                <input type="number" id="initialInvestment" value="49500" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section results">
+          <h2>Financial Results</h2>
+          <div class="results-grid">
+            <div class="result-item">
+              <div class="label">Total Members</div>
+              <div class="value" id="members">...</div>
+            </div>
+            <div class="result-item">
+              <div class="label">Monthly Revenue</div>
+              <div class="value" id="revenue">...</div>
+            </div>
+            <div class="result-item">
+              <div class="label">Monthly Costs</div>
+              <div class="value" id="costs">...</div>
+            </div>
+            <div class="result-item">
+              <div class="label">Monthly Profit</div>
+              <div class="value" id="profit">...</div>
+            </div>
+            <div class="result-item">
+              <div class="label">Annual ROI</div>
+              <div class="value" id="cashReturn">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
