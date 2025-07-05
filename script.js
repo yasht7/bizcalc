@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function calculate() {
   // Get core parameters
   const courts = +document.getElementById("courts").value;
-  const maxSlots = +document.getElementById("maxSlots").value;
+  const maxSlots = 2; // Hardcoded value
 
   // Business constants
   // For the calculations refer to business plan.
