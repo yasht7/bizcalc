@@ -22,6 +22,7 @@ function calculate() {
   const maxSlots = +document.getElementById("maxSlots").value;
 
   // Business constants
+  // For the calculations refer to business plan.
   const peakSlots = 23;
   const peakCapacity = 12;
   const offPeakSlots = 15;
